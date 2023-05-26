@@ -12,8 +12,10 @@ import global_var
 router = APIRouter()
 
 interface = ":"
-user = "Bob"
-bot = "Alice"
+
+# Newer versions of RWKV (0.7.4+) use "Human/Bot", "Q/A", and "User/Bot" instead of "Alice/Bob".
+user = "User"
+bot = "AI"
 
 
 class Message(BaseModel):
